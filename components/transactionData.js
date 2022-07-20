@@ -10,7 +10,12 @@ export const Tx_from = ({ provider, tx_hash }) => {
     };
     getFrom();
   }, []);
-  return <div>From - {fromAdd}</div>;
+  return (
+    <div>
+      <b>From : </b>
+      {fromAdd}
+    </div>
+  );
 };
 
 export const Tx_time = ({ provider, block_no }) => {
@@ -22,5 +27,9 @@ export const Tx_time = ({ provider, block_no }) => {
     };
     getTime();
   }, []);
-  return <div>Time -{time}</div>;
+  return (
+    <div>
+      <b>Time : </b> {time}
+    </div>
+  );
 };
